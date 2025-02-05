@@ -1,0 +1,137 @@
+html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Инженер - Имя Фамилия</title>
+       <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5dc; /* Бежевый фон */
+            color: #2e8b57; /* Зеленый текст */
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #3cb371; /* Темно-зеленый */
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+            animation: fadeInDown 1s ease-out;
+        }
+        .container {
+            padding: 50px;
+            animation: fadeIn 2s ease-in;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 30px;
+            border: 5px solid #2e8b57;
+            transition: transform 0.3s;
+        }
+        .profile img:hover {
+            transform: scale(1.05);
+        }
+        .bio {
+            max-width: 600px;
+        }
+        .bio h2 {
+            margin-top: 0;
+            color: #3cb371;
+        }
+        .skills {
+            margin-top: 30px;
+        }
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            background-color: #e0f2f1;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+        .skills li:hover {
+            background-color: #b2dfdb;
+        }
+        footer {
+            background-color: #3cb371;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 600px) {
+            .profile {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile img {
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Антон Гриневич</h1>
+        <p>QA Инженер</p>
+    </header>
+    <div class="container">
+        <section class="profile">
+            <img src="17.jpg" alt="17.jpg" id="profile-photo">
+            <div class="bio">
+                <h2>Обо мне</h2>
+                <p>QA инженер с 2-летним практическим опытом в тестировании различных приложений. Обладаю навыками функционального и регрессионного тестирования. Специализируюсь на ручном тестировании, разработке тестовых сценариев. Умею составлять тест-кейсы, баг-репорты и тестовые планы.</p>
+                <div class="skills">
+                    <h3>Навыки:</h3>
+                    <ul>
+                        <li>Posman</li>
+                        <li>Swager</li>
+                        <li>Redok</li>
+                        <li>JIRA</li>
+                        <li>Rest</li>
+                        <li>Soap</li>
+                        <li>SQl запросы</li>
+                        <li>Agile/Scrum</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Свяжитесь со мной: antongrinevich@mail.ru | +79273773576</p>
+    </footer>
+    <script>
